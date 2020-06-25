@@ -18,6 +18,7 @@ date_default = datetime.today()
 start_date_default = pd.to_datetime(datetime(date_default.year, date_default.month, 1))
 end_date_default = pd.to_datetime(datetime(date_default.year, date_default.month, date_default.day))
 
+print(date_default)
 
 engine = create_engine(connection_string)
 query = '''select time::date, name, village, building, stage, user_id 
